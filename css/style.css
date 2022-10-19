@@ -1,0 +1,22 @@
+
+
+@font-face {
+  font-family: loveLetters;
+  src: url('../fonts/loveletters.ttf');
+}
+
+@font-face {
+  font-family: gaby;
+  src: url('../fonts/Gaby Demo.ttf');
+}
+
+.tip{
+  position: absolute;
+  top: 900px;
+  font-family: gaby;
+  padding: 10px;
+  font-size: 15px;
+  /*border:  1px solid #000;*/
+  border-radius: 2px;
+  color: #000;
+}
