@@ -17,12 +17,15 @@ var emoji = "💗";
 var mintime = 40;
 var maxtime = 100;
 var randomTime = ((Math.random() * maxtime) + mintime) * 1000;
-var changeInterval = setInterval(changeImage, int(randomTime));
+var changeInterval = setInterval(changeImage, Math.floor(randomTime));
 
 console.log("changing interval");
+function choose(list){
+	return list[Math.floor(Math.random() * list.length)];
+}
 
 function changeImage() {
-	img = loadImage(random(encoded), imageLoaded, imageNotLoaded);
+	img = loadImage(choose(encoded), imageLoaded, imageNotLoaded);
 }
 
 
