@@ -14,6 +14,16 @@ var useList = true;
 var title = document.querySelector(".title");
 var emoji = "💗";
 
+var mintime = 40;
+var maxtime = 100;
+var randomTime = random(mintime, maxtime) * 1000;
+var changeInterval = setInterval(changeImage, int(randomTime));
+
+function changeImage() {
+	img = loadImage(random(encoded), imageLoaded, imageNotLoaded);
+}
+
+
 function preload() {
 	if (useList) {
   		song = loadSound('./music/sound.mp3');
@@ -33,9 +43,6 @@ function mousePressed() {
 function setup() {
 
 	if (useList) {
-		title.innerText = "Olga" + emoji;
-		createCanvas(592, 650);
-	} else {
 		title.innerText = "SanJay" + emoji;
 		createCanvas(640, 480);
 	}
