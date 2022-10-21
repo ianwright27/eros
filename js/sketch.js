@@ -20,7 +20,7 @@ var maxtime = 100;
 var randomTime = ((Math.random() * maxtime) + mintime) * 1000;
 var changeInterval = setInterval(changeImage, Math.floor(randomTime));
 
-
+console.log("newest version");
 console.log("changing interval");
 
 
