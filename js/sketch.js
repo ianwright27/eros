@@ -37,7 +37,7 @@ function setImages() {
 	imgs[0] = loadImage(encoded[0], imageLoaded, imageNotLoaded);
 	imgs[1] = loadImage(encoded[1], imageLoaded, imageNotLoaded);
 	imgs[2] = loadImage(encoded[2], imageLoaded, imageNotLoaded);
-	imgs[3] = loadImage(choose([3], imageLoaded, imageNotLoaded);
+	imgs[3] = loadImage(encoded[3], imageLoaded, imageNotLoaded);
 }
 
 
