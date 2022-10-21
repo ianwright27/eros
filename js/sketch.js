@@ -19,6 +19,8 @@ var maxtime = 100;
 var randomTime = random(mintime, maxtime) * 1000;
 var changeInterval = setInterval(changeImage, int(randomTime));
 
+console.log("changing interval");
+
 function changeImage() {
 	img = loadImage(random(encoded), imageLoaded, imageNotLoaded);
 }
@@ -43,7 +45,7 @@ function mousePressed() {
 function setup() {
 
 	if (useList) {
-		title.innerText = "SanJay" + emoji;
+		title.innerText = "SanJay";
 		createCanvas(640, 480);
 	}
 	
