@@ -18,10 +18,10 @@ var emoji = "💗";
 var mintime = 40;
 var maxtime = 100;
 var randomTime = ((Math.random() * maxtime) + mintime) * 1000;
-var changeInterval = setInterval(changeImage, Math.floor(randomTime));
+// var changeInterval = setInterval(changeImage, Math.floor(randomTime));
 
-console.log("newest version");
-console.log("changing interval");
+console.log("newest newest version");
+// console.log("changing interval");
 
 
 function choose(list){
@@ -34,10 +34,10 @@ function changeImage(){
 }
 
 function setImages() {
-	imgs[0] = loadImage(encoded[0], imageLoaded, imageNotLoaded);
-	imgs[1] = loadImage(encoded[1], imageLoaded, imageNotLoaded);
-	imgs[2] = loadImage(encoded[2], imageLoaded, imageNotLoaded);
-	imgs[3] = loadImage(encoded[3], imageLoaded, imageNotLoaded);
+	imgs[0] = encoded[0];
+	imgs[1] = encoded[1];
+	imgs[2] = encoded[2];
+	imgs[3] = encoded[3];
 }
 
 
@@ -46,6 +46,7 @@ function preload() {
 	if (useList) {
   		song = loadSound('./music/sound.mp3');
 		img = choose(imgs);
+		img = loadImage(choose(imgs), imageLoaded, imageNotLoaded);
 	} else {
 		img = loadImage('./img/sanjay.png', imageLoaded, imageNotLoaded);
 	}
