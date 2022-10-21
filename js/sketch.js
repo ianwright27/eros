@@ -16,7 +16,7 @@ var emoji = "💗";
 
 var mintime = 40;
 var maxtime = 100;
-var randomTime = random(mintime, maxtime) * 1000;
+var randomTime = ((Math.random() * maxtime) + mintime) * 1000;
 var changeInterval = setInterval(changeImage, int(randomTime));
 
 console.log("changing interval");
